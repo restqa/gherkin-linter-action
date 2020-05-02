@@ -25,6 +25,8 @@ jobs:
     - uses: restqa/gherkin-linter-action@0.0.1
       with:
         path: 'test/'
+        config_file: 'test/.gherkin-lintrc'
+
 ```
 
 To specify some rule you can add the configuration file `.gherkin-lintrc` into your root folder. (see rules on the [gherkin-lint](https://www.npmjs.com/package/gherkin-lint#configuration-file) library)
