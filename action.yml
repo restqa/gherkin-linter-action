@@ -9,8 +9,14 @@ inputs:
    description: 'Specify path to folder where the feature files are located'
    required: false
    default: '.'
+  config_file:
+   description: 'Specify the Configuration file'
+   required: false
+   default: '/root/.gherkin-lintrc'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - -c
+    - ${{ inputs.config_file }}
     - ${{ inputs.path }}

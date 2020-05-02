@@ -5,4 +5,6 @@ RUN apk --no-cache add python make g++
 
 RUN npm install -g gherkin-lint
 
+COPY .gherkin-lintrc /root/
+
 ENTRYPOINT "gherkin-lint"
