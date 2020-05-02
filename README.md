@@ -1,6 +1,6 @@
 # gherkin-linter-action
 
-![Logo Resqa](https://avatars1.githubusercontent.com/u/60838103?s=200&v=4)
+![Logo Resqa](https://avatars1.githubusercontent.com/u/60838103?s=150&v=4)
 
 > A Github Action to parse and validate your feature files (gherkin / cucumber)
 
