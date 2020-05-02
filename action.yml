@@ -17,6 +17,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - gherkin-lint
     - -c
     - ${{ inputs.config_file }}
     - ${{ inputs.path }}
