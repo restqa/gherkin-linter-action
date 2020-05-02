@@ -1,0 +1,16 @@
+name: 'Gherkin Linter'
+author: 'RestQa Labs'
+branding:
+  icon: 'check-circle'
+  color: 'green'
+description: "A Github Action to parse and validate your feature files (gherkin / cucumber)"
+inputs:
+  path: 
+   description: 'Specify path to folder where the feature files are located'
+   required: false
+   default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
